@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assistive Technologies Web App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Assistive Technologies Web App</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Text-to-Speech</h2>
+      <textarea id="tts-text" placeholder="Enter text here..."></textarea>
+      <button id="speak-btn">Speak Text</button>
+    </div>
+
+    <div class="card">
+      <h2>Speech-to-Text</h2>
+      <button id="start-speech">Start Listening</button>
+      <p id="speech-output">Your speech will appear here.</p>
+    </div>
+
+    <div class="card">
+      <h2>Magnifier</h2>
+      <p id="magnify-text">Sample text for magnification.</p>
+      <button id="magnify-btn">Magnify</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+
+    <div class="card">
+      <h2>Screen Reader Simulation</h2>
+      <p id="reader-content">
+        This is a sample content that will be read aloud when the screen reader is activated.
+      </p>
+      <button id="reader-btn">Activate Screen Reader</button>
+    </div>
+
+    <div class="card">
+      <h2>Text Resizer</h2>
+      <textarea id="resizer-text" placeholder="Enter text here..."></textarea>
+      <button id="increase-font">Increase Size</button>
+      <button id="decrease-font">Decrease Size</button>
+    </div>
+
+    <div class="card">
+      <h2>Virtual Keyboard</h2>
+      <input type="text" id="keyboard-input" placeholder="Type here...">
+      <div id="virtual-keyboard"></div>
+      <button id="clear-keyboard">Clear</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
